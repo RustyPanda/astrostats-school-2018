@@ -1,0 +1,19 @@
+version: '3'
+# see https://docs.docker.com/compose/compose-file/
+
+services:
+  dev:
+    image: 88f444f66d90
+    ports:
+     - "8888:8888"
+    volumes:
+     - "/Users/mikewalmsley/repos/astrostats-school-2018/notebooks:/notebooks"
+#    command: sh -c 'jupyter notebook --ip 0.0.0.0 --allow-root --notebook-dir=notebooks'  # overrides CMD
+#    env: "DISPLAY"
+#    command: ./start.sh
+
+
+#volumes:
+#  notebooks:
+
+#/Users/mikewalmsley/repos/astrostats-school-2018/notebooks
